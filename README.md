@@ -17,4 +17,6 @@ This used to be a simple test app for IT to see if Daniel McGuire Corporation’
 
 If I forget about this but you're interested, text us or email me:
 (213) 534-7768 or danielmcguire23@icloud.com
+
+
 Have a Great Day!
