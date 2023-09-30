@@ -7,6 +7,6 @@ This used to be a simple test app for computers for Daniel McGuire Corporation.
 Fun Fact: This was codenamed 'DMC-IsPrimeWrapper'!
 
 
-##Args:
+## Args:
 --credits    ---  View Credits
 
