@@ -4,10 +4,15 @@
 This used to be a simple test app for IT to see if Daniel McGuire Corporation’s computers were okay.
 ## Notes
 **Since I wrote it, I thought I should attach a GNU license and upload it here.**
-### Args:
--c --credits === View Credits
 
--h --help === View Help
+### Usage:
+  --credits, -c: Show credits
+  --help, -h: Show help
+  number: Check if a number is a prime number
+
+BIG CHANGES COMING IN V3!
+
+Example: ./IsPrimeWrapper.exe <Number> <Arguments>
 
 ***PLEASE NOTE I AM STILL LEARNING C# (The Programming Language for this project)***
 
