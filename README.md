@@ -3,7 +3,7 @@
 
 This used to be a simple test app for IT to see if Daniel McGuire Corporation’s computers were okay.
 ## Notes
-**Since I wrote it, I thought I should attach a GNU license and upload it here..**
+**Since I wrote it, I thought I should attach a GNU license and upload it here.**
 ### Args:
 -c --credits === View Credits
 
