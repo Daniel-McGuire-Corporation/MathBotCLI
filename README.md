@@ -10,7 +10,7 @@ This used to be a simple test app for IT to see if Daniel McGuire Corporation’
   --help, -h: Show help
   number: Check if a number is a prime number
 
-BIG CHANGES COMING IN V3!
+BIG CHANGES COMING IN V3.1.0!
 
 Example: ./IsPrimeWrapper.exe <Number> <Arguments>
 
