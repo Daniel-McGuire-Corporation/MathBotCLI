@@ -66,8 +66,8 @@ class Program
     else
     {
         Console.Clear();
-        Console.WriteLine("Error: No arguments provided.");
-        Console.WriteLine("Please provide an argument. Use --help for more information.");
+        Console.WriteLine("Error: No Numbers or Arguments Specified.");
+        Console.WriteLine("Please specify an argument. Use --help for more information.");
     }
 }
 }
