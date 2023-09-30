@@ -7,5 +7,9 @@ Fun Fact: This was codenamed 'DMC-IsPrimeWrapper'!
 
 
 ### Args:
---credits    ---  View Credits
+--credits === View Credits
+**FUTURE ARGS:
+-c --credits === View Credits
+-h --help === View Help
 
+***PLEASE NOTE I AM STILL LEARNING C# (The Programming Language for this project)
