@@ -1,4 +1,4 @@
-[![License: GPL v3] (https://img.shields.io/badge/License/GPLv3-Blue.svg)
+[![License: GPL v3](https://img.shields.io/badge/License/GPLv3-Blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-3.0)
 # Prime Number Solver
 
 This used to be a simple test app to see if Daniel McGuire Corporation.
