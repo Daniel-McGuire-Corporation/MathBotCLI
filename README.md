@@ -10,3 +10,11 @@ This used to be a simple test app for IT to see if Daniel McGuire Corporation’
 -h --help === View Help
 
 ***PLEASE NOTE I AM STILL LEARNING C# (The Programming Language for this project)***
+
+**Build From Source Instructions Will Be Here By 2024**
+
+**V2 Should Be Here By November 2023**
+
+If I forget about this but you're interested, text us or email me:
+(213) 534-7768 or danielmcguire23@icloud.com
+Have a Great Day!
