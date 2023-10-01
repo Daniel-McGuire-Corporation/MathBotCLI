@@ -1,4 +1,4 @@
-[![License: GPL v3](https://img.shields.io/github/license/DanielLMcGuire/PrimeNumberSolver)](https://www.gnu.org/licenses/old-licenses/gpl-3.0) ![Language: C#](https://img.shields.io/badge/language-C%23-green)
+[![License: GPL v3](https://img.shields.io/github/license/DanielLMcGuire/MathBotGUI)](https://www.gnu.org/licenses/old-licenses/gpl-3.0) ![Language: C#](https://img.shields.io/badge/language-C%23-green)
 
 # Math Bot CLI
 GUI out in Fall 2024
