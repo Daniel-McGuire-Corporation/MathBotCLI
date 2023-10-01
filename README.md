@@ -1,5 +1,6 @@
 # Math Bot CLI
 GUI out in Fall 2024
+
 [![License: GPL v3](https://img.shields.io/github/license/DanielLMcGuire/PrimeNumberSolver)](https://www.gnu.org/licenses/old-licenses/gpl-3.0) ![Language: C#](https://img.shields.io/badge/language-C%23-green)
 
 This used to be a simple test app for IT to see if Daniel McGuire Corporation’s computers were okay.
