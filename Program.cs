@@ -1,6 +1,6 @@
-﻿// DMC CS Script - IsPrime Wrapper v1.0 - First Made By Daniel McGuire on 11/08/2021
-// Credit: Myself, GitHub Copilot, Bing Copilot.
-// Copyright 2021 - 2024 Daniel McGuire Corporation
+﻿// DMC CS Script - MathBot CLI v3.0.1 - First Made By Daniel McGuire on 11/08/2021
+// Credit: Myself, GitHub Copilot, ChatGPT.
+// Copyright 2021 - 2023 Daniel McGuire Corporation
 //              All Rights Reserved.
 // Compiled Using dotnet on September 30th, 2023
 // **Above Info May Be Incorrect If Cloned From GitHub Repo**
@@ -36,7 +36,7 @@ class Program
                     Console.WriteLine();
                     Console.WriteLine("This Application was Written in C# by Daniel McGuire");
                     Console.WriteLine("(With Help From GitHub Copilot & ChatGPT)");
-                    Console.WriteLine("Copyright (C) 2024 Daniel McGuire Corporation");
+                    Console.WriteLine("Copyright (C) 2023 Daniel McGuire Corporation");
                     Console.WriteLine("This software is under GNU GP v3 License");
                     Console.WriteLine("Please visit https://www.daniellmcguirecorporation.ml for more info");
                     break;
@@ -44,16 +44,18 @@ class Program
                 case "-h":
                     Console.Clear();
                     Console.WriteLine("Daniel McGuire Corporation Tools (R)");
-                    Console.WriteLine("Prime Number Solver Version 3.0.0-beta.1");
+                    Console.WriteLine("MathBot CLI Version 3.0.1");
+                    Console.WriteLine();
+                    Console.WriteLine("  MORE ARGUMENTS COMING SOON");
                     Console.WriteLine();
                     Console.WriteLine("Usage:");
                     Console.WriteLine("  --credits, -c: Show credits");
                     Console.WriteLine("  --help, -h: Show help");
-                    Console.WriteLine("  --isprime <number>: Check if a number is a prime number");
+                    Console.WriteLine("  --prime <number>: Check if a number is a prime number");
                     Console.WriteLine();
-                    Console.WriteLine("Example: ./IsPrimeWrapper.exe --isprime <Number>");
+                    Console.WriteLine("Example: ./MathBotCLI.exe --prime <Number>");
                     break;
-                case "--isprime":
+                case "--prime":
                     if (args.Length > 1)
                     {
                         int number = Convert.ToInt32(args[1]);
@@ -64,7 +66,7 @@ class Program
                     }
                     else
                     {
-                        Console.WriteLine("Please provide a number after --isprime");
+                        Console.WriteLine("Please provide a number after --prime");
                     }
                     break;
                 default:
@@ -82,4 +84,5 @@ class Program
         }
     }
 }
+
 

@@ -11,18 +11,18 @@ This used to be a simple test app for IT to see if Daniel McGuire Corporation’
 
 Version 2 Has Been Skipped Due To Issues.
 
-### Usage: (Updated as of V3.0.0)
+### Usage: (Updated as of V3.0.1)
   --credits, -c: Show credits
   --help, -h: Show help
-  --isprime <number>: Check if a number is a prime number
+  --prime <number>: Check if a number is a prime number
 
-Example: ./IsPrimeWrapper.exe --isprime <Number>
+Example: ./MathBotCLI <Operation> <Number>
 
 ***PLEASE NOTE I AM STILL LEARNING C# (The Programming Language for this project)***
 
 **Build From Source Instructions Will Be Here By 2024**
 
-**V2 Should Be Here By November 2023**
+**V3.1 Should Be Here By December 2023**
 
 If I forget about this but you're interested, text us or email me:
 (213) 534-7768 or danielmcguire23@icloud.com
