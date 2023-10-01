@@ -3,7 +3,7 @@
 # Math Bot CLI
 GUI out in Fall 2024
 
-Currently Adapting to Sematic Versioning.
+Currently Adapting to Semantic Versioning.
 
 This used to be a simple test app for IT to see if Daniel McGuire Corporation’s computers were okay.
 ## Notes
