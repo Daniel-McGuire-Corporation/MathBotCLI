@@ -1,12 +1,12 @@
-# Prime Number Solver
+# Math Bot CLI
+GUI out in Fall 2024
 [![License: GPL v3](https://img.shields.io/github/license/DanielLMcGuire/PrimeNumberSolver)](https://www.gnu.org/licenses/old-licenses/gpl-3.0) ![Language: C#](https://img.shields.io/badge/language-C%23-green)
 
 This used to be a simple test app for IT to see if Daniel McGuire Corporation’s computers were okay.
 ## Notes
 **Since I wrote it, I thought I should attach a GNU license and upload it here.**
 
-**BIG CHANGES COMING IN V3.1.0!**
-(maybe you can guess whats coming based on the updated usage ;)
+(This Project is going to change a lot, I'm adding a lot of math functions to this)
 Version 2 Has Been Skipped Due To Issues.
 
 ### Usage: (Updated as of V3.0.0)
