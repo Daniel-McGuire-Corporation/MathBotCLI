@@ -5,14 +5,16 @@ This used to be a simple test app for IT to see if Daniel McGuire Corporation’
 ## Notes
 **Since I wrote it, I thought I should attach a GNU license and upload it here.**
 
-### Usage:
+**BIG CHANGES COMING IN V3.1.0!**
+(maybe you can guess whats coming based on the updated usage ;)
+Version 2 Has Been Skipped Due To Issues.
+
+### Usage: (Updated as of V3.0.0)
   --credits, -c: Show credits
   --help, -h: Show help
-  number: Check if a number is a prime number
+  --isprime <number>: Check if a number is a prime number
 
-BIG CHANGES COMING IN V3.1.0!
-
-Example: ./IsPrimeWrapper.exe <Number> <Arguments>
+Example: ./IsPrimeWrapper.exe --isprime <Number>
 
 ***PLEASE NOTE I AM STILL LEARNING C# (The Programming Language for this project)***
 
