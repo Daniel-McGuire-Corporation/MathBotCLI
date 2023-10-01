@@ -1,4 +1,4 @@
-﻿// DMC CS Script - MathBot CLI v3.0.1 - First Made By Daniel McGuire on 11/08/2021
+﻿// DMC CS Script - MathBot CLI v3.0.2 - First Made By Daniel McGuire on 11/08/2021
 // Credit: Myself, GitHub Copilot, ChatGPT.
 // Copyright 2021 - 2023 Daniel McGuire Corporation
 //              All Rights Reserved.
@@ -29,8 +29,10 @@ class Program
         {
             switch(args[0])
             {
-                case "--credits":
-                case "-c":
+                case "--about":
+                case "--info":
+                case "-a":
+                case "/about":
                     Console.Clear();
                     Console.WriteLine("Daniel McGuire Corporation Tools (R)");
                     Console.WriteLine();
@@ -42,14 +44,16 @@ class Program
                     break;
                 case "--help":
                 case "-h":
+                case "/?":
+                case "/help":
                     Console.Clear();
                     Console.WriteLine("Daniel McGuire Corporation Tools (R)");
-                    Console.WriteLine("MathBot CLI Version 3.0.1");
+                    Console.WriteLine("MathBot CLI Version 3.0.2");
                     Console.WriteLine();
                     Console.WriteLine("  MORE ARGUMENTS COMING SOON");
                     Console.WriteLine();
                     Console.WriteLine("Usage:");
-                    Console.WriteLine("  --credits, -c: Show credits");
+                    Console.WriteLine("  --about, -info, -a: Show credits");
                     Console.WriteLine("  --help, -h: Show help");
                     Console.WriteLine("  --prime <number>: Check if a number is a prime number");
                     Console.WriteLine();
@@ -69,9 +73,23 @@ class Program
                         Console.WriteLine("Please provide a number after --prime");
                     }
                     break;
+                case "/prime":
+                    if (args.Length > 1)
+                    {
+                        int number = Convert.ToInt32(args[1]);
+                        if(IsPrime(number))
+                            Console.WriteLine(number + " is a prime number.");
+                        else
+                            Console.WriteLine(number + " is not a prime number.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Please provide a number after /prime");
+                    }
+                    break;  
                 default:
                     Console.Clear();
-                    Console.WriteLine("Error: No Arguments Specified.");
+                    Console.WriteLine("Error: No Numbers Specified.");
                     Console.WriteLine("Please specify an argument. Use --help for more information.");
                     break;
             }
@@ -79,7 +97,7 @@ class Program
         else
         {
             Console.Clear();
-            Console.WriteLine("Error: No Numbers or Arguments Specified.");
+            Console.WriteLine("Error: No Arguments Specified.");
             Console.WriteLine("Please specify an argument. Use --help for more information.");
         }
     }
