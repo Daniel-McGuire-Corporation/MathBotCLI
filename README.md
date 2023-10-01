@@ -12,8 +12,11 @@ This used to be a simple test app for IT to see if Daniel McGuire Corporation’
 Version 2 Has Been Skipped Due To Issues.
 
 ### Usage: (Updated as of V3.0.1)
+ 
   --credits, -c: Show credits
+  
   --help, -h: Show help
+  
   --prime <number>: Check if a number is a prime number
 
 Example: ./MathBotCLI <Operation> <Number>
