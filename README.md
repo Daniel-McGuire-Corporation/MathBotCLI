@@ -19,9 +19,9 @@ Version 2 Has Been Skipped Due To Issues.
   
   --help, -h: Show help
   
-  --prime <number>: Check if a number is a prime number
+  --prime (number): Check if a number is a prime number
 
-Example: ./MathBotCLI <Operation> <Number>
+Example: ./MathBotCLI (Operation) (Number)
 
 ***PLEASE NOTE I AM STILL LEARNING C# (The Programming Language for this project)***
 
