@@ -3,7 +3,7 @@
 // Copyright 2021 - 2023 Daniel McGuire Corporation
 // All Rights Reserved.
 // Available under GNU GP v3.0.0 License 
-// **Above Info May Be Incorrect If Cloned From GitHub Repo**
+// GITHUB VERSION of CODE
 using System;
 
 class Program
