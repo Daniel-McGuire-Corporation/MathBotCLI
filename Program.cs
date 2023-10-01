@@ -120,7 +120,67 @@ class Program
                     {
                         Console.WriteLine("Please provide a number after /prime");
                     }
-                    break;  
+                    break;
+                //Addition
+                case "--addition":
+                case "-add":
+                    if (args.Length > 2)
+                    {
+                        int number1 = Convert.ToInt32(args[1]);
+                        int number2 = Convert.ToInt32(args[2]);
+                        Console.WriteLine("The sum is " + (number1 + number2));
+                    }
+                    else
+                    {
+                        Console.WriteLine("Please provide two numbers after --addition");
+                    }
+                    break;
+                //Subtraction
+                case "--subtraction":
+                case "-subtract":
+                    if (args.Length > 2)
+                    {
+                        int number1 = Convert.ToInt32(args[1]);
+                        int number2 = Convert.ToInt32(args[2]);
+                        Console.WriteLine("The difference is " + (number1 - number2));
+                    }
+                    else
+                    {
+                        Console.WriteLine("Please provide two numbers after --subtraction");
+                    }
+                    break;
+                //Multiplication
+                case "--multiplication":
+                case "-multiply":
+                    if (args.Length > 2)
+                    {
+                        int number1 = Convert.ToInt32(args[1]);
+                        int number2 = Convert.ToInt32(args[2]);
+                        Console.WriteLine("The product is " + (number1 * number2));
+                    }
+                    else
+                    {
+                        Console.WriteLine("Please provide two numbers after --multiplication");
+                    }
+                    break;
+                //Division
+                case "--division":
+                case "-divide":
+                    if (args.Length > 2)
+                    {       
+                        int number1 = Convert.ToInt32(args[1]);
+                        int number2 = Convert.ToInt32(args[2]);
+                        if (number2 != 0)
+                            Console.WriteLine("The quotient is " + ((double)number1 / number2));
+                        else
+                            Console.WriteLine("Cannot divide by zero");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Please provide two numbers after --division");
+                    }
+                    break;
+                //ERROR
                 default:
                     Console.Clear();
                     Console.WriteLine("Please specify an argument. Use --help for more information.");
