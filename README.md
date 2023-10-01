@@ -5,7 +5,7 @@ GUI out in Fall 2024
 
 I plan on expanding this for more than math
 
-Currently Adapting to Semantic Versioning.
+Currently Attempting to Adapt to Semantic Versioning.
 
 ## Notes
 **Since I wrote it, I thought I should attach a GNU license and upload it here.**
