@@ -8,6 +8,7 @@ This used to be a simple test app for IT to see if Daniel McGuire Corporation’
 **Since I wrote it, I thought I should attach a GNU license and upload it here.**
 
 (This Project is going to change a lot, I'm adding a lot of math functions to this)
+
 Version 2 Has Been Skipped Due To Issues.
 
 ### Usage: (Updated as of V3.0.0)
