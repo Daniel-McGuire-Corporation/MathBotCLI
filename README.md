@@ -7,7 +7,6 @@ I plan on expanding this for more than math
 
 Currently Adapting to Semantic Versioning.
 
-This used to be a simple test app for IT to see if Daniel McGuire Corporation’s computers were okay.
 ## Notes
 **Since I wrote it, I thought I should attach a GNU license and upload it here.**
 
@@ -24,8 +23,6 @@ Version 2 Has Been Skipped Due To Issues.
   --prime (number): Check if a number is a prime number
 
 Example: ./MathBotCLI (Operation) (Number)
-
-***PLEASE NOTE I AM STILL LEARNING C# (The Programming Language for this project)***
 
 **Build From Source Instructions Will Be Here By 2024**
 
