@@ -183,14 +183,14 @@ class Program
                 //ERROR
                 default:
                     Console.Clear();
-                    Console.WriteLine("Please specify an argument. Use --help for more information.");
+                    Console.WriteLine("Please specify a valid argument. Use --help for more information.");
                     break;
             }
         }
         else
         {
             Console.Clear();
-            Console.WriteLine("Please specify an argument. Use --help for more information.");
+            Console.WriteLine("Please specify a valid argument. Use --help for more information.");
         }
     }
 }
