@@ -2,6 +2,7 @@
 
 # Math Bot CLI
 GUI out in Fall 2024
+[C++ Version (Alpha Build)](https://github.com/DanielLMcGuire/MathBotCLI-CPP)
 
 I plan on expanding this for more than math
 
