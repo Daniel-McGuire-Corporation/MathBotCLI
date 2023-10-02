@@ -12,17 +12,23 @@ Currently Attempting to Adapt to Semantic Versioning.
 
 (This Project is going to change a lot, I'm adding a lot of math functions to this)
 
-Version 2 Has Been Skipped Due To Issues.
-
-### Usage: (Updated as of V3.0.2)
- 
-  --about --info -a: Show About info
+### Usage: (Updated as of V3.1.0)
+  
+  --about, -info, -a: Show About info
+  
+  --credits, -c: Credits
   
   --help, -h: Show help
   
-  --prime (number): Check if a number is a prime number
-
-Example: ./MathBotCLI (Operation) (Number)
+  --prime <number>: Check if a number is a prime number
+  
+  --addition, -add: Add Numbers Together
+  
+  --subtraction, -subtract: Subtract Numbers
+  
+  --multiplication -multiply: Multiply Numbers
+  
+  --division, -divide: Divide Numbers
 
 **Build From Source Instructions Will Be Here By 2024**
 

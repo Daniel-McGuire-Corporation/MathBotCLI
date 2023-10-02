@@ -56,13 +56,18 @@ class Program
                     Console.WriteLine("Daniel McGuire Corporation Tools (R)");
                     Console.WriteLine("MathBot CLI Version 3.0.3");
                     Console.WriteLine();
-                    Console.WriteLine("  MORE ARGUMENTS COMING SOON (use --later for more info).");
                     Console.WriteLine();
                     Console.WriteLine("Usage:");
                     Console.WriteLine("  --about, -info, -a: Show About info");
                     Console.WriteLine("  --credits, -c: Credits");
                     Console.WriteLine("  --help, -h: Show help");
                     Console.WriteLine("  --prime <number>: Check if a number is a prime number");
+                    Console.WriteLine("  --addition, -add: Add Numbers Together");
+                    Console.WriteLine("  --subtraction, -subtract: Subtract Numbers");
+                    Console.WriteLine("  --multiplication -multiply: Multiply Numbers");
+                    Console.WriteLine("  --division, -divide: Divide Numbers");
+                    Console.WriteLine();
+                    Console.WriteLine("Example ./MathBotCLI <Operation> <Number1> <Number2>")
                     break;
                 // Credits
                 case "--credits":
@@ -77,19 +82,6 @@ class Program
                     Console.WriteLine();
                     Console.WriteLine("Special Thanks to Microsoft for Making .NET and Visual Studio and VS Code!");
                     Console.WriteLine("RIP Visual Studio for macOS (One of the program used for this project).");
-                    break;
-                // Coming Soon:
-                case "--later":
-                    Console.WriteLine("Upcoming Features (in The 'BIG' 3.1.0 Update)");
-                    Console.WriteLine("MathBot CLI Version 3.0.3");
-                    Console.WriteLine();
-                    Console.WriteLine("Args:");
-                    Console.WriteLine("  --addition, -add: Add Numbers Together");
-                    Console.WriteLine("  --subtraction, -subtract: Subtract Numbers");
-                    Console.WriteLine("  --multiplication -multiply: Multiply Numbers");
-                    Console.WriteLine("  --division, -divide: Divide Numbers");
-                    Console.WriteLine();
-                    Console.WriteLine("AND SO MUCH MORE COMING SOON!");
                     break;
                 // Prime Number Checker
                 case "--prime":
@@ -194,3 +186,4 @@ class Program
         }
     }
 }
+
