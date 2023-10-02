@@ -45,7 +45,7 @@ class Program
                     Console.WriteLine("More Credits Available using -c switch.");
                     Console.WriteLine();
                     Console.WriteLine("This software is under GNU GP v3 License.");
-                    Console.WriteLine("More info will be here in 4.0 Update.")
+                    Console.WriteLine("More info will be here in 4.0 Update.");
                     break;
                 // Help Details
                 case "--help":
