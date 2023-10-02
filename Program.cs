@@ -1,4 +1,4 @@
-﻿// DMC CS Script - MathBot CLI v3.0.3 - First Made By Daniel McGuire on 11/08/2021
+﻿// DMC CS Script - MathBot CLI v3.1.1 - First Made By Daniel McGuire on 11/08/2021
 // Credit: Daniel McGuire, Andrew "The Coder" M.
 // Copyright 2021 - 2023 Daniel McGuire Corporation
 // All Rights Reserved.
@@ -8,7 +8,7 @@ using System;
 
 class Program
 {
-    //Start IsPrime Stuff
+    //Start Math Stuff
     static bool IsPrime(int number)
     {
         if (number <= 1) return false;
@@ -22,7 +22,7 @@ class Program
                 return false;
 
         return true;
-        //End IsPrime Stuff
+        //End Math Stuff
     }
 
     static void Main(string[] args)
@@ -39,13 +39,13 @@ class Program
                     Console.Clear();
                     Console.WriteLine("Daniel McGuire Corporation Tools (R)");
                     Console.WriteLine("Copyright (C) 2023 Daniel McGuire Corporation");
-                    Console.WriteLine("MathBot CLI Version 3.0.3");
+                    Console.WriteLine("MathBot CLI Version 3.1.1");
                     Console.WriteLine();
                     Console.WriteLine("This Application was Written in C# by Daniel McGuire.");
                     Console.WriteLine("More Credits Available using -c switch.");
                     Console.WriteLine();
                     Console.WriteLine("This software is under GNU GP v3 License.");
-                    Console.WriteLine("More Details will be here in 3.1.1 update.");
+                    Console.WriteLine("More info will be here in 4.0 Update.")
                     break;
                 // Help Details
                 case "--help":
@@ -54,7 +54,7 @@ class Program
                 case "/help":
                     Console.Clear();
                     Console.WriteLine("Daniel McGuire Corporation Tools (R)");
-                    Console.WriteLine("MathBot CLI Version 3.0.3");
+                    Console.WriteLine("MathBot CLI Version 3.1.1");
                     Console.WriteLine();
                     Console.WriteLine();
                     Console.WriteLine("Usage:");
@@ -67,7 +67,7 @@ class Program
                     Console.WriteLine("  --multiplication -multiply: Multiply Numbers");
                     Console.WriteLine("  --division, -divide: Divide Numbers");
                     Console.WriteLine();
-                    Console.WriteLine("Example ./MathBotCLI <Operation> <Number1> <Number2>")
+                    Console.WriteLine("Example ./MathBotCLI <Operation> <Number1> <Number2>");
                     break;
                 // Credits
                 case "--credits":
@@ -75,7 +75,7 @@ class Program
                     Console.Clear();
                     Console.WriteLine("Daniel McGuire Corporation Tools (R)");
                     Console.WriteLine("Copyright (C) 2023 Daniel McGuire Corporation");
-                    Console.WriteLine("MathBot CLI Version 3.0.3");
+                    Console.WriteLine("MathBot CLI Version 3.1.1");
                     Console.WriteLine();
                     Console.WriteLine("Main Coder: Daniel McGuire");
                     Console.WriteLine("2nd Coder / Math Expert: Andrew M.");
@@ -83,7 +83,7 @@ class Program
                     Console.WriteLine("Special Thanks to Microsoft for Making .NET and Visual Studio and VS Code!");
                     Console.WriteLine("RIP Visual Studio for macOS (One of the program used for this project).");
                     break;
-                // Prime Number Checker
+                //Prime 
                 case "--prime":
                     if (args.Length > 1)
                     {
@@ -98,7 +98,7 @@ class Program
                         Console.WriteLine("Please provide a number after --prime");
                     }
                     break;
-                //Legacy Arguments for Prime Number Checker
+                //Legacy Arguments for Prime
                 case "/prime":
                     if (args.Length > 1)
                     {
@@ -116,6 +116,7 @@ class Program
                 //Addition
                 case "--addition":
                 case "-add":
+                case "/add":
                     if (args.Length > 2)
                     {
                         int number1 = Convert.ToInt32(args[1]);
@@ -130,6 +131,7 @@ class Program
                 //Subtraction
                 case "--subtraction":
                 case "-subtract":
+                case "/subtract":
                     if (args.Length > 2)
                     {
                         int number1 = Convert.ToInt32(args[1]);
@@ -144,6 +146,7 @@ class Program
                 //Multiplication
                 case "--multiplication":
                 case "-multiply":
+                case "/multiply":
                     if (args.Length > 2)
                     {
                         int number1 = Convert.ToInt32(args[1]);
@@ -158,6 +161,7 @@ class Program
                 //Division
                 case "--division":
                 case "-divide":
+                case "/divide":
                     if (args.Length > 2)
                     {       
                         int number1 = Convert.ToInt32(args[1]);
@@ -175,15 +179,14 @@ class Program
                 //ERROR
                 default:
                     Console.Clear();
-                    Console.WriteLine("Please specify a valid argument. Use --help for more information.");
+                    Console.WriteLine("Please specify a valid argument. Use -h for more information.");
                     break;
             }
         }
         else
         {
             Console.Clear();
-            Console.WriteLine("Please specify a valid argument. Use --help for more information.");
+            Console.WriteLine("Please specify a valid argument. Use -h for more information.");
         }
     }
 }
-
