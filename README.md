@@ -32,7 +32,6 @@ Currently Attempting to Adapt to Semantic Versioning.
 
 **Build From Source Instructions Will Be Here By 2024**
 
-**V3.1 Should Be Here By December 2023**
 
 If I forget about this but you're interested, text us or email me:
 (213) 534-7768 or danielmcguire23@icloud.com
