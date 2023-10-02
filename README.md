@@ -30,7 +30,7 @@ Currently Attempting to Adapt to Semantic Versioning.
   
   --division, -divide: Divide Numbers
 
-**Build From Source Instructions Will Be Here By 2024**
+[**Build From Source**](https://github.com/DanielLMcGuire/MathBotCLI/wiki/Install-From-Source(
 
 
 If I forget about this but you're interested, text us or email me:
