@@ -1,4 +1,4 @@
-﻿// DMC CS Script - MathBot CLI v3.1.2 - First Made By Daniel McGuire on 11/08/2021
+﻿// DMC CS Script - MathBot CLI v4.0.0 - First Made By Daniel McGuire on 11/08/2021
 // Credit: Daniel McGuire, Andrew "The Coder" M.
 // Copyright 2021 - 2023 Daniel McGuire Corporation
 // All Rights Reserved.
@@ -38,7 +38,7 @@ class Program
                     Console.Clear();
                     Console.WriteLine("Daniel McGuire Corporation Tools (R)");
                     Console.WriteLine("Copyright (C) 2023 Daniel McGuire Corporation");
-                    Console.WriteLine("MathBot CLI Version 3.1.2");
+                    Console.WriteLine("MathBot CLI Version 4.0.");
                     Console.WriteLine();
                     Console.WriteLine("This Application was Written in C# by Daniel McGuire.");
                     Console.WriteLine("More Credits Available using -c switch.");
@@ -53,7 +53,7 @@ class Program
                 case "/help":
                     Console.Clear();
                     Console.WriteLine("Daniel McGuire Corporation Tools (R)");
-                    Console.WriteLine("MathBot CLI Version 3.1.2");
+                    Console.WriteLine("MathBot CLI Version 4.0.0");
                     Console.WriteLine();
                     Console.WriteLine();
                     Console.WriteLine("Usage:");
@@ -76,7 +76,7 @@ class Program
                     Console.Clear();
                     Console.WriteLine("Daniel McGuire Corporation Tools (R)");
                     Console.WriteLine("Copyright (C) 2023 Daniel McGuire Corporation");
-                    Console.WriteLine("MathBot CLI Version 3.1.2");
+                    Console.WriteLine("MathBot CLI Version 4.0.0");
                     Console.WriteLine();
                     Console.WriteLine("===================");
                     Console.WriteLine("=Upcoming Features=");
@@ -90,7 +90,7 @@ class Program
                     Console.Clear();
                     Console.WriteLine("Daniel McGuire Corporation Tools (R)");
                     Console.WriteLine("Copyright (C) 2023 Daniel McGuire Corporation");
-                    Console.WriteLine("MathBot CLI Version 3.1.2");
+                    Console.WriteLine("MathBot CLI Version 4.0.0");
                     Console.WriteLine();
                     Console.WriteLine("Main Coder: Daniel McGuire");
                     Console.WriteLine("2nd Coder / Math Expert: Andrew M.");
