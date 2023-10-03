@@ -1,9 +1,8 @@
-﻿// DMC CS Script - MathBot CLI v3.1.1 - First Made By Daniel McGuire on 11/08/2021
+﻿// DMC CS Script - MathBot CLI v3.1.2 - First Made By Daniel McGuire on 11/08/2021
 // Credit: Daniel McGuire, Andrew "The Coder" M.
 // Copyright 2021 - 2023 Daniel McGuire Corporation
 // All Rights Reserved.
 // Available under GNU GP v3.0.0 License 
-// GITHUB VERSION of CODE
 using System;
 
 class Program
@@ -39,13 +38,13 @@ class Program
                     Console.Clear();
                     Console.WriteLine("Daniel McGuire Corporation Tools (R)");
                     Console.WriteLine("Copyright (C) 2023 Daniel McGuire Corporation");
-                    Console.WriteLine("MathBot CLI Version 3.1.1");
+                    Console.WriteLine("MathBot CLI Version 3.1.2");
                     Console.WriteLine();
                     Console.WriteLine("This Application was Written in C# by Daniel McGuire.");
                     Console.WriteLine("More Credits Available using -c switch.");
                     Console.WriteLine();
                     Console.WriteLine("This software is under GNU GP v3 License.");
-                    Console.WriteLine("More info will be here in 4.0 Update.");
+                    Console.WriteLine("More info will be here in 2024");
                     break;
                 // Help Details
                 case "--help":
@@ -54,7 +53,7 @@ class Program
                 case "/help":
                     Console.Clear();
                     Console.WriteLine("Daniel McGuire Corporation Tools (R)");
-                    Console.WriteLine("MathBot CLI Version 3.1.1");
+                    Console.WriteLine("MathBot CLI Version 3.1.2");
                     Console.WriteLine();
                     Console.WriteLine();
                     Console.WriteLine("Usage:");
@@ -66,8 +65,24 @@ class Program
                     Console.WriteLine("  --subtraction, -subtract: Subtract Numbers");
                     Console.WriteLine("  --multiplication -multiply: Multiply Numbers");
                     Console.WriteLine("  --division, -divide: Divide Numbers");
+                    Console.WriteLine("  --upcoming: Upcoming Features");
                     Console.WriteLine();
-                    Console.WriteLine("Example ./MathBotCLI <Operation> <Number1> <Number2>");
+                    Console.WriteLine("(Legacy Arguments (e.g. /?) exist.)");
+                    Console.WriteLine();
+                    Console.WriteLine("Example:    $ MathBotCLI <--operation> <number1> <number2>");
+                    break;
+                // Upcoming
+                case "--upcoming":
+                    Console.Clear();
+                    Console.WriteLine("Daniel McGuire Corporation Tools (R)");
+                    Console.WriteLine("Copyright (C) 2023 Daniel McGuire Corporation");
+                    Console.WriteLine("MathBot CLI Version 3.1.2");
+                    Console.WriteLine();
+                    Console.WriteLine("===================");
+                    Console.WriteLine("=Upcoming Features=");
+                    Console.WriteLine("===================");
+                    Console.WriteLine();
+                    Console.WriteLine("This page will be enabled in the 4.0.0 update.");
                     break;
                 // Credits
                 case "--credits":
@@ -75,7 +90,7 @@ class Program
                     Console.Clear();
                     Console.WriteLine("Daniel McGuire Corporation Tools (R)");
                     Console.WriteLine("Copyright (C) 2023 Daniel McGuire Corporation");
-                    Console.WriteLine("MathBot CLI Version 3.1.1");
+                    Console.WriteLine("MathBot CLI Version 3.1.2");
                     Console.WriteLine();
                     Console.WriteLine("Main Coder: Daniel McGuire");
                     Console.WriteLine("2nd Coder / Math Expert: Andrew M.");
