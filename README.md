@@ -5,32 +5,10 @@ GUI out in Fall 2024
 
 [C++ Version (Alpha Build)](https://github.com/DanielLMcGuire/MathBotCLI-CPP)
 
-I plan on expanding this for more than math
+Beta Branch 
+ Beta releases are monthly
 
-Currently Attempting to Adapt to Semantic Versioning.
-
-## Notes
-**Since I wrote it, I thought I should attach a GNU license and upload it here.**
-
-(This Project is going to change a lot, I'm adding a lot of math functions to this)
-
-### Usage: (Updated as of V3.1.0)
-  
-  --about, -info, -a: Show About info
-  
-  --credits, -c: Credits
-  
-  --help, -h: Show help
-  
-  --prime <number>: Check if a number is a prime number
-  
-  --addition, -add: Add Numbers Together
-  
-  --subtraction, -subtract: Subtract Numbers
-  
-  --multiplication -multiply: Multiply Numbers
-  
-  --division, -divide: Divide Numbers
+ Current Beta: 4.0.0 Beta 1
 
 [**Build From Source**](https://github.com/DanielLMcGuire/MathBotCLI/wiki/Build-From-Source)
 
