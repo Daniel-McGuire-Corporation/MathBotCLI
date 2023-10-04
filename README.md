@@ -7,6 +7,8 @@ GUI out in Fall 2024
 
 I plan on expanding this for more than math
 
+**We Recommend Downloading [v4.0 Beta 3](https://github.com/DanielLMcGuire/MathBotCLI/releases/tag/v4.0.0-beta.3), This is our most stable beta (as stable as a non-beta release**
+
 Currently Attempting to Adapt to Semantic Versioning.
 
 ## Notes
