@@ -1,13 +1,8 @@
 [![License: GPL v3](https://img.shields.io/github/license/DanielLMcGuire/MathBotCLI)](https://www.gnu.org/licenses/old-licenses/gpl-3.0) ![Language: C#](https://img.shields.io/badge/language-C%23-green)
 
 # Math Bot CLI
-GUI out in Fall 2024
-
-[C++ Version (Alpha Build)](https://github.com/DanielLMcGuire/MathBotCLI-CPP)
 
 I plan on expanding this for more than math
-
-**We Recommend Downloading [v4.0 Beta 3](https://github.com/DanielLMcGuire/MathBotCLI/releases/tag/v4.0.0-beta.3), This is our most stable beta (as stable as a non-beta release**
 
 Currently Attempting to Adapt to Semantic Versioning.
 
@@ -33,8 +28,6 @@ Currently Attempting to Adapt to Semantic Versioning.
   --multiplication -multiply: Multiply Numbers
   
   --division, -divide: Divide Numbers
-
-[**Build From Source**](https://github.com/DanielLMcGuire/MathBotCLI/wiki/Build-From-Source)
 
 
 If I forget about this but you're interested, text us or email me:
