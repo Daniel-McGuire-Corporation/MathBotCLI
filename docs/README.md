@@ -12,17 +12,29 @@ This project originated from the need for a versatile mathematical tool that goe
 Math Bot CLI currently supports the following features and commands:
 
 --about, -info, -a: Display detailed information about the application, including version details, copyright, and licensing.
+
 --credits, -c: Acknowledgments and credits for contributors and tools used in development.
+
 --help, -h: Guidance on usage, command references, and a rundown of available functionalities.
+
 --prime <number>: Verify if a given number is a prime number.
+
 --addition, -add: Perform addition operations on given numbers.
+
 --subtraction, -subtract: Execute subtraction operations between numbers.
+
 --multiplication -multiply: Multiply numbers together.
+
 --division, -divide: Divide numbers accurately.
+
 Future Developments and Community Engagement
+
 This project is a work in progress and constantly evolving. Your feedback, suggestions, and contributions are invaluable! We encourage active participation from the community. If you encounter issues, have ideas for improvements, or wish to contribute code or ideas, please don't hesitate to reach out:
 
 ### Contact Us:
 Phone: (213) 534-7768
+
 Email: danielmcguire23@icloud.com
+
+
 The Math Bot CLI project aims to evolve into a versatile tool not only for mathematics but for various computational tasks. Your involvement and support are pivotal in shaping its future!
