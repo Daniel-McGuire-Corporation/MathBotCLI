@@ -5,7 +5,7 @@
 // Available under GNU GP v3.0.0 License 
 using System;
 
-class Program
+class MathBotCLI
 {
     //Start Math Stuff
     static bool IsPrime(int number)
