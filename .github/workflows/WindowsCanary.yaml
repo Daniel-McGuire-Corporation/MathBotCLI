@@ -1,4 +1,4 @@
-name: Build
+name: Windows Canary Build
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - name: Checkout code
@@ -22,7 +22,13 @@ jobs:
         dotnet-version: '8.0.x' # Change this to your desired .NET version
 
     - name: Restore dependencies
-      run: dotnet restore src/linux/MathBotCLI.csproj
+      run: dotnet restore src/windows/MathBotCLI.csproj
 
     - name: Build
-      run: dotnet build src/linux/MathBotCLI.csproj --configuration Release
+      run: dotnet build src/windows/MathBotCLI.csproj --configuration Release --output "canary/Windows/"
+
+    - name: Add ignored files (.gitignore)
+      run: |
+        git add -f canary/Windows/*
+        git commit -m "Built Windows Canary"
+        git push

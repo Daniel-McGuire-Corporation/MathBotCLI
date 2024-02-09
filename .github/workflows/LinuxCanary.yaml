@@ -1,0 +1,34 @@
+name: Linux Canary Build
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '8.0.x' # Change this to your desired .NET version
+
+    - name: Restore dependencies
+      run: dotnet restore src/linux/MathBotCLI.csproj
+
+    - name: Build
+      run: dotnet build src/linux/MathBotCLI.csproj --configuration Release --output "canary/Linux/"
+
+    - name: Add ignored files (.gitignore)
+      run: |
+        git add -f canary/Linux/*
+        git commit -m "Built Linux Canary Build"
+        git push
