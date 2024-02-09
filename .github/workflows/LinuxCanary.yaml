@@ -36,4 +36,4 @@ jobs:
       run: |
         git add -f canary/Linux/*
         git commit -m "Built Linux Canary Build"
-        git push
+        git push -f
