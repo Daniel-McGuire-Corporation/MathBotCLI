@@ -36,4 +36,4 @@ jobs:
       run: |
         git add -f canary/Windows/*
         git commit -m "Built Windows Canary"
-        git push -f
+        git push 
