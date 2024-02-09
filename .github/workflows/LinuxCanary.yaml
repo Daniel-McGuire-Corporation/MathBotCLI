@@ -29,9 +29,9 @@ jobs:
       run: dotnet build src/linux/MathBotCLI.csproj --configuration Release --output "canary/Linux/"
 
     - name: Git Identity 
-        run: |
-          git config user.email "146508360+DanielLMcGuire@users.noreply.github.com"
-          git config user.name "Daniel McGuire"
+      run: |
+        git config user.email "146508360+DanielLMcGuire@users.noreply.github.com"
+        git config user.name "Daniel McGuire"
 
     - name: Add ignored files (.gitignore)
       run: |
