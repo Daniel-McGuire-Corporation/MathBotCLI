@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - name: Checkout code
@@ -35,5 +35,5 @@ jobs:
     - name: Add ignored files (.gitignore)
       run: |
         git add -f canary/Linux/*
-        git commit -m "Built Linux Canary Build"
+        git commit -m "Built Linux Canary"
         git push -f
