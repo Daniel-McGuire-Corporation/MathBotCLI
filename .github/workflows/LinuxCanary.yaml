@@ -27,6 +27,11 @@ jobs:
     - name: Build
       run: dotnet build src/linux/MathBotCLI.csproj --configuration Release --output "canary/Linux/"
 
+    - name: Set Git identity
+      run: |
+        git config user.email "danielmcguire23@icloud.com"
+        git config user.name "Daniel McGuire"
+
     - name: Add ignored files (.gitignore)
       run: |
         git add -f canary/Linux/*
