@@ -5,12 +5,12 @@
 ## How to install:
 ### - Windows Canary
   - [Download Latest Canary](https://github.com/DanielLMcGuire/MathBotCLI/tree/main/canary/Windows/)
-### - Windows (Starting Monday Feb 12th 2024)
+### - Windows (COMING SOON)
   - Open CMD / Powershell (Press Win+R, then on Win11 type ```wt.exe``` (```type cmd.exe``` on Win10) and press enter)
   - Run the following command:
     ```PowerShell
     winget install DanielMcGuireCorporation.MathBotCLI
-    ```
+    ``` 
 ### - Linux
   - [Download Latest Canary](https://github.com/DanielLMcGuire/MathBotCLI/tree/main/canary/Linux/)
 
