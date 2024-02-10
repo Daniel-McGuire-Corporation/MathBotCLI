@@ -5,7 +5,7 @@
 ## How to install:
 ### - Windows Canary
   - [Download Latest Canary](https://github.com/DanielLMcGuire/MathBotCLI/tree/main/canary/Windows/)
-### - Windows (COMING SOON)
+### - Windows (COMING SOON) **Use Releases for now** ========>
   - Open CMD / Powershell (Press Win+R, then on Win11 type ```wt.exe``` (```type cmd.exe``` on Win10) and press enter)
   - Run the following command:
     ```PowerShell
