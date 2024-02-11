@@ -1,8 +1,8 @@
-﻿// DMC CS Script - MathBot CLI v3.1.2 - First Made By Daniel McGuire on 11/08/2021
+﻿// DMC CS Script - MathBot CLI v3.2.1 - First Made By Daniel McGuire on 11/08/2021
 // Credit: Daniel McGuire, Andrew "The Coder" M.
 // Copyright 2021 - 2023 Daniel McGuire Corporation
 // All Rights Reserved.
-// Available under GNU GP v3.0.0 License 
+// Available under MIT License 
 using System;
 
 class MathBotCLI
@@ -28,7 +28,7 @@ class MathBotCLI
     {
         if (args.Length > 0)
         {
-            switch(args[0])
+            switch (args[0])
             {
                 // About Details
                 case "--about":
@@ -37,14 +37,13 @@ class MathBotCLI
                 case "/about":
                     Console.Clear();
                     Console.WriteLine("Daniel McGuire Corporation Tools (R)");
-                    Console.WriteLine("Copyright (C) 2023 Daniel McGuire Corporation");
-                    Console.WriteLine("MathBot CLI Version 3.1.2");
+                    Console.WriteLine("Copyright (C) 2024 Daniel McGuire Corporation");
+                    Console.WriteLine("MathBot CLI Version 3.2.1-linux");
                     Console.WriteLine();
                     Console.WriteLine("This Application was Written in C# by Daniel McGuire.");
                     Console.WriteLine("More Credits Available using -c switch.");
                     Console.WriteLine();
-                    Console.WriteLine("This software is under GNU GP v3 License.");
-                    Console.WriteLine("More info will be here in 2024");
+                    Console.WriteLine("This software is under MIT License.");
                     break;
                 // Help Details
                 case "--help":
@@ -53,7 +52,7 @@ class MathBotCLI
                 case "/help":
                     Console.Clear();
                     Console.WriteLine("Daniel McGuire Corporation Tools (R)");
-                    Console.WriteLine("MathBot CLI Version 3.1.2");
+                    Console.WriteLine("MathBot CLI Version 3.2.1-linux");
                     Console.WriteLine();
                     Console.WriteLine();
                     Console.WriteLine("Usage:");
@@ -75,8 +74,8 @@ class MathBotCLI
                 case "--upcoming":
                     Console.Clear();
                     Console.WriteLine("Daniel McGuire Corporation Tools (R)");
-                    Console.WriteLine("Copyright (C) 2023 Daniel McGuire Corporation");
-                    Console.WriteLine("MathBot CLI Version 3.1.2");
+                    Console.WriteLine("Copyright (C) 2024 Daniel McGuire Corporation");
+                    Console.WriteLine("MathBot CLI Version 3.2.1-linux");
                     Console.WriteLine();
                     Console.WriteLine("===================");
                     Console.WriteLine("=Upcoming Features=");
@@ -89,8 +88,8 @@ class MathBotCLI
                 case "-c":
                     Console.Clear();
                     Console.WriteLine("Daniel McGuire Corporation Tools (R)");
-                    Console.WriteLine("Copyright (C) 2023 Daniel McGuire Corporation");
-                    Console.WriteLine("MathBot CLI Version 3.1.2");
+                    Console.WriteLine("Copyright (C) 2024 Daniel McGuire Corporation");
+                    Console.WriteLine("MathBot CLI Version 3.2.1-linux");
                     Console.WriteLine();
                     Console.WriteLine("Main Coder: Daniel McGuire");
                     Console.WriteLine("2nd Coder / Math Expert: Andrew M.");
@@ -103,7 +102,7 @@ class MathBotCLI
                     if (args.Length > 1)
                     {
                         int number = Convert.ToInt32(args[1]);
-                        if(IsPrime(number))
+                        if (IsPrime(number))
                             Console.WriteLine(number + " is a prime number.");
                         else
                             Console.WriteLine(number + " is not a prime number.");
@@ -118,7 +117,7 @@ class MathBotCLI
                     if (args.Length > 1)
                     {
                         int number = Convert.ToInt32(args[1]);
-                        if(IsPrime(number))
+                        if (IsPrime(number))
                             Console.WriteLine(number + " is a prime number.");
                         else
                             Console.WriteLine(number + " is not a prime number.");
@@ -178,7 +177,7 @@ class MathBotCLI
                 case "-divide":
                 case "/divide":
                     if (args.Length > 2)
-                    {       
+                    {
                         int number1 = Convert.ToInt32(args[1]);
                         int number2 = Convert.ToInt32(args[2]);
                         if (number2 != 0)
