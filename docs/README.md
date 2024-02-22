@@ -9,7 +9,7 @@
   - Open CMD / Powershell (Press Win+R, then on Win11 type ```wt.exe``` (```type cmd.exe``` on Win10) and press enter)
   - Run the following command:
     ```PowerShell
-    winget install DanielMcGuireCorporation.MathBotCLI
+    winget install MathBotCLI
     ``` 
 ### - Linux
   - [Download Latest Canary](https://github.com/DanielLMcGuire/MathBotCLI/tree/main/canary/Linux/)
