@@ -18,7 +18,7 @@
   !define DESCRIPTION "Command Line Calculator"
   !define DEVELOPER "Daniel McGuire" #License Holder
   # Files Directory
-  !define FILE_DIR "..\..\src\windows\bin\Release\net7.0" #Replace with the full path of install folder
+  !define FILE_DIR "..\..\src\windows\bin\Release\net8.0-windows10.0.17763.0" #Replace with the full path of install folder
   !define LOGO_ICON_FILE "C:\Program Files (x86)\NSIS\Contrib\Graphics\Icons\nsis1-install.ico"
   !define LICENSE_TEXT_FILE "main.nsi-extras\LICENSE.txt"
   !define HEADER_IMG_FILE "C:\Program Files (x86)\NSIS\Contrib\Graphics\Header\win.bmp"

@@ -1,9 +1,10 @@
-﻿// DMC CS Script - MathBot CLI v3.2.1 - First Made By Daniel McGuire on 11/08/2021
+﻿// DMC CS Script - MathBot CLI v3.3.1 - First Made By Daniel McGuire on 11/08/2021
 // Credit: Daniel McGuire, Andrew "The Coder" M.
 // Copyright 2021 - 2023 Daniel McGuire Corporation
 // All Rights Reserved.
 // Available under MIT License 
 using System;
+using System.Diagnostics;
 
 class MathBotCLI
 {
@@ -28,8 +29,61 @@ class MathBotCLI
     {
         if (args.Length > 0)
         {
-            switch (args[0])
+            switch(args[0])
             {
+                case "--random":
+                case "-random":
+                    if (args.Length > 2 && long.TryParse(args[1], out long length) && int.TryParse(args[2], out int count))
+                    {
+                        if (length <= 0 || count <= 0)
+                        {
+                            Console.WriteLine("Please provide positive numbers greater than zero for the length and count.");
+                        }
+                        else
+                        {
+                            if (length * count > 99999)
+                            {
+                                Console.WriteLine("This attempt was stopped because this could quickly fill up memory");
+                                Console.WriteLine("(The max length and count is 99999)");
+                            }
+                            else
+                            {
+                                Random rand = new Random();
+                                for (int j = 0; j < count; j++)
+                                {
+                                    string randomNumber = "";
+                                    for (long i = 0; i < length; i++)
+                                    {
+                                        randomNumber += rand.Next(0, 10);
+                                    }
+                                    Console.WriteLine("Random Number " + (j + 1) + ": " + randomNumber);
+                                }
+                            }
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Please provide valid length and count for the random numbers.");
+                    }
+                    break;
+                /// Aprilfoolsvideo
+                case "--switch":
+                case "-old":
+                case "-xp":
+                case "/old":
+                    Console.Clear();
+                    Console.WriteLine("Daniel McGuire Corporation Tools (R)");
+                    Console.WriteLine("Copyright (C) 2024 Daniel McGuire Corporation");
+                    Console.WriteLine("MathBot CLI Version 3.3.1");
+                    Thread.Sleep(1000); // 1-second delay
+                    Console.WriteLine();
+                    Thread.Sleep(3000); // 3-second delay
+                    Console.WriteLine("Please wait...");
+                    Thread.Sleep(5000); // 5-second delay
+                    Console.WriteLine("April Fools!");
+                    string url = "https://youtu.be/xzyR2tduX1k";
+                    Process.Start(new ProcessStartInfo("cmd", $"/c start {url}") { CreateNoWindow = true });
+                    break;
                 // About Details
                 case "--about":
                 case "-info":
@@ -38,7 +92,7 @@ class MathBotCLI
                     Console.Clear();
                     Console.WriteLine("Daniel McGuire Corporation Tools (R)");
                     Console.WriteLine("Copyright (C) 2024 Daniel McGuire Corporation");
-                    Console.WriteLine("MathBot CLI Version 3.2.1-linux");
+                    Console.WriteLine("MathBot CLI Version 3.3.1");
                     Console.WriteLine();
                     Console.WriteLine("This Application was Written in C# by Daniel McGuire.");
                     Console.WriteLine("More Credits Available using -c switch.");
@@ -52,36 +106,28 @@ class MathBotCLI
                 case "/help":
                     Console.Clear();
                     Console.WriteLine("Daniel McGuire Corporation Tools (R)");
-                    Console.WriteLine("MathBot CLI Version 3.2.1-linux");
+                    Console.WriteLine("MathBot CLI Version 3.3.1");
                     Console.WriteLine();
                     Console.WriteLine();
                     Console.WriteLine("Usage:");
                     Console.WriteLine("  --about, -info, -a: Show About info");
                     Console.WriteLine("  --credits, -c: Credits");
                     Console.WriteLine("  --help, -h: Show help");
-                    Console.WriteLine("  --prime <number>: Check if a number is a prime number");
+                    Console.WriteLine("  --prime: Check if a number is a prime number");
                     Console.WriteLine("  --addition, -add: Add Numbers Together");
                     Console.WriteLine("  --subtraction, -subtract: Subtract Numbers");
                     Console.WriteLine("  --multiplication -multiply: Multiply Numbers");
                     Console.WriteLine("  --division, -divide: Divide Numbers");
-                    Console.WriteLine("  --upcoming: Upcoming Features");
+                    Console.WriteLine("  --random, -random: Generate a Random Number with given length");
+                    Console.WriteLine("     <Length of number> <Amount of numbers>");
                     Console.WriteLine();
                     Console.WriteLine("(Legacy Arguments (e.g. /?) exist.)");
                     Console.WriteLine();
-                    Console.WriteLine("Example:    $ MathBotCLI <--operation> <number1> <number2>");
+                    Console.WriteLine("Example: MathBotCLI <--operation> <number1> <number2>");
                     break;
                 // Upcoming
                 case "--upcoming":
-                    Console.Clear();
-                    Console.WriteLine("Daniel McGuire Corporation Tools (R)");
-                    Console.WriteLine("Copyright (C) 2024 Daniel McGuire Corporation");
-                    Console.WriteLine("MathBot CLI Version 3.2.1-linux");
-                    Console.WriteLine();
-                    Console.WriteLine("===================");
-                    Console.WriteLine("=Upcoming Features=");
-                    Console.WriteLine("===================");
-                    Console.WriteLine();
-                    Console.WriteLine("This page will be enabled in the 4.0.0 update.");
+                    Console.WriteLine("Please refer to the GitHub Readme.");
                     break;
                 // Credits
                 case "--credits":
@@ -89,20 +135,23 @@ class MathBotCLI
                     Console.Clear();
                     Console.WriteLine("Daniel McGuire Corporation Tools (R)");
                     Console.WriteLine("Copyright (C) 2024 Daniel McGuire Corporation");
-                    Console.WriteLine("MathBot CLI Version 3.2.1-linux");
+                    Console.WriteLine("MathBot CLI Version 3.3.1"); 
                     Console.WriteLine();
-                    Console.WriteLine("Main Coder: Daniel McGuire");
-                    Console.WriteLine("2nd Coder / Math Expert: Andrew M.");
+                    Console.WriteLine("Logic Expert / Coder: Daniel McGuire");
+                    Console.WriteLine("Designer / Math Expert: Andrew M.");
+                    Console.WriteLine("Wordsmith (grammar and word expert): John Belanger");
+                    Console.WriteLine("Error Handling: Ava Johnston");
+                    Console.WriteLine("Error Helper: Windows Copilot and ChatGPT");
                     Console.WriteLine();
-                    Console.WriteLine("Special Thanks to Microsoft for Making .NET and Visual Studio and VS Code!");
-                    Console.WriteLine("RIP Visual Studio for macOS (One of the program used for this project).");
+                    Console.WriteLine("Made at Daniel McGuire Inc of England and Canada");
+                    Console.WriteLine("Thank you for using MathBotCLI");
                     break;
                 //Prime 
                 case "--prime":
                     if (args.Length > 1)
                     {
                         int number = Convert.ToInt32(args[1]);
-                        if (IsPrime(number))
+                        if(IsPrime(number))
                             Console.WriteLine(number + " is a prime number.");
                         else
                             Console.WriteLine(number + " is not a prime number.");
@@ -117,7 +166,7 @@ class MathBotCLI
                     if (args.Length > 1)
                     {
                         int number = Convert.ToInt32(args[1]);
-                        if (IsPrime(number))
+                        if(IsPrime(number))
                             Console.WriteLine(number + " is a prime number.");
                         else
                             Console.WriteLine(number + " is not a prime number.");
@@ -177,7 +226,7 @@ class MathBotCLI
                 case "-divide":
                 case "/divide":
                     if (args.Length > 2)
-                    {
+                    {       
                         int number1 = Convert.ToInt32(args[1]);
                         int number2 = Convert.ToInt32(args[2]);
                         if (number2 != 0)
