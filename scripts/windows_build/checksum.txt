@@ -1,6 +1,0 @@
-
-Algorithm       Hash                                                                   Path                            
----------       ----                                                                   ----                            
-SHA256          4AE90731F49157CEA0899EB41E909AEB61DAACA0F10C82E4619A26B0F15F677B       C:\Source\MathBotCLI\scripts\...
-
-

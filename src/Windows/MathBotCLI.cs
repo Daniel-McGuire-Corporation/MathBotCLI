@@ -44,7 +44,7 @@ class MathBotCLI
                             if (length * count > 99999)
                             {
                                 Console.WriteLine("This attempt was stopped because this could quickly fill up memory");
-                                Console.WriteLine("(The max length and count is 99999)");
+                                Console.WriteLine("(The max amount of total numbers is 99999)");
                             }
                             else
                             {

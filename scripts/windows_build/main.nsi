@@ -15,25 +15,25 @@
   !define APPNAME "MathBotCLI"
   !define APP_NAME_IN_INSTALLED_DIR "MathBotCLI"
   !define COMPANYNAME "Daniel McGuire Corporation"
-  !define DESCRIPTION "Command Line Calculator"
+  !define DESCRIPTION "Simple Web Browser"
   !define DEVELOPER "Daniel McGuire" #License Holder
   # Files Directory
-  !define FILE_DIR "..\..\src\windows\bin\Release\net8.0-windows10.0.17763.0" #Replace with the full path of install folder
+  !define FILE_DIR "..\..\src\windows\bin\Release\net8.0-windows10.0.17763.0" #Replace with the path of install folder (Should be right unless file structure tampered.)
   !define LOGO_ICON_FILE "C:\Program Files (x86)\NSIS\Contrib\Graphics\Icons\nsis1-install.ico"
   !define LICENSE_TEXT_FILE "main.nsi-extras\LICENSE.txt"
   !define HEADER_IMG_FILE "C:\Program Files (x86)\NSIS\Contrib\Graphics\Header\win.bmp"
   # These three must be integers
-  !define VERSIONMAJOR 3	#Major release Number
-  !define VERSIONMINOR 2	#Minor release Number
-  !define VERSIONBUILD 1	#Maintenance release Number (bugfixes only)
-  !define BUILDNUMBER 15		#Source control revision number
+  !define VERSIONMAJOR 2	#Major release Number
+  !define VERSIONMINOR 5	#Minor release Number
+  !define VERSIONBUILD 0	#Maintenance release Number (bugfixes only)
+  !define BUILDNUMBER 0		#Source control revision number
   # These will be displayed by the "Click here for support information" link in "Add/Remove Programs"
   # It is possible to use "mailto:" links in here to open email client
-  !define HELPURL "https://github.com/DanielLMcGuire/MathBotCLI/issues/new/choose"
-  !define UPDATEURL "https://github.com/DanielLMcGuire/MathBotCLI/releases/latest"
-  !define ABOUTURL "https://github.com/DanielLMcGuire/MathBotCLI"
+  !define HELPURL "https://github.com/Daniel-McGuire-Corporation/MathBotCLI/issues"
+  !define UPDATEURL "https://github.com/Daniel-McGuire-Corporation/MathBotCLI/releases/latest"
+  !define ABOUTURL "https://github.com/Daniel-McGuire-Corporation/MathBotCLI"
   # This is the size (in kB) of all the files copied into "Program Files"
-  !define INSTALLSIZE 248
+  !define INSTALLSIZE 21153
 
 ;--------------------------------
 ;General
@@ -109,11 +109,11 @@
 ;Installer section
 
 Section "install"
+  # Files for install directory - to build the installer, these should be in the same directory as the install script (this file)
   SetOutPath $INSTDIR
 
   # Files add here should be removed by the uninstaller (see section "uninstall")
-  File /r "..\..\src\Windows\bin\Release\net7.0\*.*"
-  Exec '"$INSTDIR\Path\MathBotCLIPATH.exe" add "C:\Program Files (x86)\MathBotCLI"'
+  File /r "..\..\src\windows\bin\Release\net8.0-windows10.0.17763.0\*.*"
   
   ################################################################################################################
 
@@ -121,6 +121,13 @@ Section "install"
   writeUninstaller "$INSTDIR\uninstall.exe"
 
   SetOutPath $INSTDIR
+  # Start Menu
+  CreateDirectory "$SMPROGRAMS\${APPNAME}"
+  CreateShortCut "$SMPROGRAMS\${APPNAME}\${APPNAME}.lnk" "$INSTDIR\${APP_NAME_IN_INSTALLED_DIR}.exe" "" "$INSTDIR\logo.ico"
+  CreateShortCut "$SMPROGRAMS\${APPNAME}\uninstall.lnk" "$INSTDIR\uninstall.exe" "" ""
+  
+  # Desktop Shortcut
+  CreateShortCut "$DESKTOP\${APPNAME}.lnk" "$INSTDIR\${APP_NAME_IN_INSTALLED_DIR}.exe" "" "$INSTDIR\logo.ico"
 
   # Registry information for add/remove programs
   WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" "DisplayName" "${APPNAME} - ${DESCRIPTION}"
