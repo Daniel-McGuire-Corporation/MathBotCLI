@@ -2,15 +2,6 @@
 
 # Math Bot CLI - Command-Line Mathematical Utility
 
-## How to install:
-### - Windows Canary (Portable)
-  - [Download Latest Canary](https://github.com/DanielLMcGuire/MathBotCLI/tree/main/canary/Windows/)
-### - Windows
-  - Open CMD / Powershell (Press Win+R, then on Win11 type ```wt.exe``` (type ```cmd.exe``` on Win10) and press enter)
-  - Run the following command:
-    ```PowerShell
-    winget install MathBotCLI
-    ``` 
 ### - Linux (Portable)
   - [Download Latest Canary](https://github.com/DanielLMcGuire/MathBotCLI/tree/main/canary/Linux/)
 
