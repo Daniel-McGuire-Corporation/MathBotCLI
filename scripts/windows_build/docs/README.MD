@@ -1,6 +1,6 @@
 # Build Script
 
-This method uses the .NET SDK to build and install the Simple Browser application.
+This method uses the .NET SDK to build and install the MathBotCLI application.
 
 ## Steps
 
