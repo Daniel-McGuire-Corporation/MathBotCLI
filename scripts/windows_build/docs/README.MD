@@ -14,6 +14,7 @@ This method uses the .NET SDK to build and install the MathBotCLI application.
    ```
 2. **Install the Prerequisites:**
    **.NET:** This project requires the .NET 8.0 SDK. You can download it from [Microsoft .NET Downloads 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0).
+   **NSIS:** This project requires the Nullsoft Scriptable Install System. You can download it from [nsis.sourceforge.io](https://nsis.sourceforge.io/Download)
 3. **Run BuildAll.cmd:**
    Run the BuildAll.cmd file in the script location of the repository. This will compile the source code and create an installer.
 
