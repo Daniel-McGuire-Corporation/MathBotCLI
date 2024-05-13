@@ -2,9 +2,6 @@
 
 # Math Bot CLI - Command-Line Mathematical Utility
 
-### - Linux (Portable)
-  - [Download Latest Canary](https://github.com/DanielLMcGuire/MathBotCLI/tree/main/canary/Linux/)
-
 ## Overview
 Welcome to Math Bot CLI, a command-line utility that's more than just a mathematical tool. It's a dynamic and expandable application designed to facilitate various numerical computations and serve as a platform for future feature enhancements.
 
