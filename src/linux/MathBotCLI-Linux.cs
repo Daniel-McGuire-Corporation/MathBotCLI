@@ -1,6 +1,6 @@
-﻿// DMC CS Script - MathBot CLI v3.3.1 - First Made By Daniel McGuire on 11/08/2021
+﻿// DMC CS Script - MathBot CLI v3.4.0.0.5064 - First Made By Daniel McGuire on 11/08/2021
 // Credit: Daniel McGuire, Andrew "The Coder" M.
-// Copyright 2021 - 2023 Daniel McGuire Corporation
+// Copyright 2021 - 2024 Daniel McGuire Corporation
 // All Rights Reserved.
 // Available under MIT License 
 using System;
@@ -44,7 +44,7 @@ class MathBotCLI
                             if (length * count > 99999)
                             {
                                 Console.WriteLine("This attempt was stopped because this could quickly fill up memory");
-                                Console.WriteLine("(The max length and count is 99999)");
+                                Console.WriteLine("(The max amount of total numbers is 99999)");
                             }
                             else
                             {
@@ -66,24 +66,6 @@ class MathBotCLI
                         Console.WriteLine("Please provide valid length and count for the random numbers.");
                     }
                     break;
-                /// Aprilfoolsvideo
-                case "--switch":
-                case "-old":
-                case "-xp":
-                case "/old":
-                    Console.Clear();
-                    Console.WriteLine("Daniel McGuire Corporation Tools (R)");
-                    Console.WriteLine("Copyright (C) 2024 Daniel McGuire Corporation");
-                    Console.WriteLine("MathBot CLI Version 3.3.1");
-                    Thread.Sleep(1000); // 1-second delay
-                    Console.WriteLine();
-                    Thread.Sleep(3000); // 3-second delay
-                    Console.WriteLine("Please wait...");
-                    Thread.Sleep(5000); // 5-second delay
-                    Console.WriteLine("April Fools!");
-                    string url = "https://youtu.be/xzyR2tduX1k";
-                    Process.Start(new ProcessStartInfo("cmd", $"/c start {url}") { CreateNoWindow = true });
-                    break;
                 // About Details
                 case "--about":
                 case "-info":
@@ -92,7 +74,7 @@ class MathBotCLI
                     Console.Clear();
                     Console.WriteLine("Daniel McGuire Corporation Tools (R)");
                     Console.WriteLine("Copyright (C) 2024 Daniel McGuire Corporation");
-                    Console.WriteLine("MathBot CLI Version 3.3.1");
+                    Console.WriteLine("MathBot CLI Version 24H2 Build 3.4.0.0.5064");
                     Console.WriteLine();
                     Console.WriteLine("This Application was Written in C# by Daniel McGuire.");
                     Console.WriteLine("More Credits Available using -c switch.");
@@ -106,7 +88,7 @@ class MathBotCLI
                 case "/help":
                     Console.Clear();
                     Console.WriteLine("Daniel McGuire Corporation Tools (R)");
-                    Console.WriteLine("MathBot CLI Version 3.3.1");
+                    Console.WriteLine("MathBot CLI Version 24H2");
                     Console.WriteLine();
                     Console.WriteLine();
                     Console.WriteLine("Usage:");
@@ -135,7 +117,7 @@ class MathBotCLI
                     Console.Clear();
                     Console.WriteLine("Daniel McGuire Corporation Tools (R)");
                     Console.WriteLine("Copyright (C) 2024 Daniel McGuire Corporation");
-                    Console.WriteLine("MathBot CLI Version 3.3.1"); 
+                    Console.WriteLine("MathBot CLI Version 24H2"); 
                     Console.WriteLine();
                     Console.WriteLine("Logic Expert / Coder: Daniel McGuire");
                     Console.WriteLine("Designer / Math Expert: Andrew M.");

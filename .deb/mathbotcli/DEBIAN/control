@@ -1,6 +1,0 @@
-Package: MATHBOTCLI
-Version: 1.0
-Architecture: amd64
-Maintainer: Daniel McGuire danielmcguire23@icloud.com
-Depends: dotnet-runtime-8.0
-Description: MathBotCLI - Command Line Calculator

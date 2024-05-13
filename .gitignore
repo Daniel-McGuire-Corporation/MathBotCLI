@@ -3,6 +3,7 @@
 
 SHA256.txt
 MathBotCLISetup.exe
+*.deb
 
 ### Csharp ###
 ## Ignore Visual Studio temporary files, build results, and
