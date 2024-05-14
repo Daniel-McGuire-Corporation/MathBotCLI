@@ -7,12 +7,12 @@ echo.
 echo Compiling %App%
 echo.
 cd ..\..\src\Windows\
-dotnet build MathBotCLI.csproj --nologo -c Release -o bin\Release\net8.0-windows10.0.17763.0
-cd ..\Windows-NSIS-PathVari\PathEd\
+dotnet build MathBotCLI.csproj --nologo -c Release -o bin\Release\net8.0-windows10.0.17763.0 --verbosity detailed
+cd ..\..\InsPathComp\
 echo.
 echo Compiling Installer Path Component
 echo.
-dotnet build PathEd.csproj --nologo -c Release -o ..\..\Windows\bin\Release\net8.0-windows10.0.17763.0\Path\
+dotnet build PathEd.csproj --nologo -c Release -o ..\Windows\bin\Release\net8.0-windows10.0.17763.0\Path\ --verbosity detailed
 echo.
 echo Application Compiled!
 echo.
