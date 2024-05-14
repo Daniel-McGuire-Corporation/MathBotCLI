@@ -1,8 +1,8 @@
 # Created by https://www.toptal.com/developers/gitignore/api/windows,macos,csharp,visualstudio,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,csharp,visualstudio,visualstudiocode
 
-SHA256.txt
-MathBotCLISetup.exe
+*SHA256.txt
+*Setup.exe
 *.deb
 
 ### Csharp ###
