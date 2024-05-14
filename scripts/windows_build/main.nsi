@@ -51,6 +51,8 @@
 
   ;Request application privileges for Windows Vista
   RequestExecutionLevel admin ;Require admin rights on NT6+ (When UAC is turned on)
+  ; Set Text in bottom left
+  BrandingText "${COMPANYNAME}" ; Set the branding text to your custom text
   
 ;--------------------------------
 ;Variables
@@ -62,7 +64,6 @@
 
   !define MUI_HEADERIMAGE
   !define MUI_HEADERIMAGE_BITMAP "${HEADER_IMG_FILE}" ; optional
-  
   !define MUI_ABORTWARNING
 
 ;--------------------------------
@@ -113,7 +114,7 @@ Section "install"
 
   # Files add here should be removed by the uninstaller (see section "uninstall")
   File /r "..\..\src\Windows\bin\Release\net8.0-windows10.0.17763.0\*.*"
-  Exec '"$INSTDIR\Path\MathBotCLIPATH.exe" add $INSTDIR'
+  Exec '"$INSTDIR\Path\DMCpathtool.exe" add "C:\Program Files (x86)\MathBotCLI"'
   
   ################################################################################################################
 
@@ -154,6 +155,7 @@ SectionEnd
   VIAddVersionKey /LANG=${LANG_ENGLISH} "FileVersion" "${VERSIONMAJOR}.${VERSIONMINOR}.${VERSIONBUILD}"
   VIAddVersionKey /LANG=${LANG_ENGLISH} "ProductVersion" "${VERSIONMAJOR}.${VERSIONMINOR}.${VERSIONBUILD}.${BUILDNUMBER}"
 
+
 ;--------------------------------
 ;Verify Unintall
 
@@ -173,6 +175,8 @@ Section "uninstall"
   delete "$SMPROGRAMS\${APPNAME}\${APPNAME}.lnk"
   #Try to remove the Start Menu folder - this will only happen if it is empty
   rmDir "$SMPROGRAMS\${APPNAME}"
+  #Remove from path
+  Exec '"$INSTDIR\Path\DMCpathtool.exe" remove "C:\Program Files (x86)\MathBotCLI"'
 
   ################################################################################################################
 
