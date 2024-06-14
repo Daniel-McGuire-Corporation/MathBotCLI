@@ -2,7 +2,7 @@
 
 # Math Bot CLI - Command-Line Mathematical Utility
 
-Linux: Add apt repo ([instructions](https://daniel-mcguire-corporation.github.io/DMC-APT/)) and run:
+Linux: Add apt repo ([instructions](https://github.com/Daniel-McGuire-Corporation/DMC-APT)) and run:
 ```bash
 sudo apt install mathbotcli
 ```
