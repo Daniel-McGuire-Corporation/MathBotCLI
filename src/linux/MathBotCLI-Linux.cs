@@ -1,5 +1,5 @@
-﻿// DMC CS Script - MathBot CLI v3.4.0.0.5064 - First Made By Daniel McGuire on 11/08/2021
-// Credit: Daniel McGuire, Andrew "The Coder" M.
+﻿// DMC CS Script - MathBot CLI v3
+// Credit: Daniel McGuire, Andrew M.
 // Copyright 2021 - 2024 Daniel McGuire Corporation
 // All Rights Reserved.
 // Available under MIT License 
