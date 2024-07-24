@@ -1,21 +1,16 @@
-/*
-Author: Daniel McGuire
-
-Purpose: MathBotCLI Development Header
-*/
-#ifndef MathBot_CLIENT_H
-#define MathBot_CLIENT_H
+#ifndef MATHBOTCLI_H
+#define MATHBOTCLI_H
 
 #ifdef _WIN32
-#define DLL_IMPORT __declspec(dllimport)
+#define DLL_EXPORT __declspec(dllexport)
 #else
-#define DLL_IMPORT
+#define DLL_EXPORT
 #endif
 
 extern "C" {
-    DLL_IMPORT void MBver();
-    DLL_IMPORT double calc2(double operand1, const char* op, double operand2);
-    DLL_IMPORT double calc1(const char* op, double operand);
+    void MBver();
+    double calc2(double operand1, const char* op, double operand2);
+    double calc1(const char* op, double operand);
 }
 
-#endif // CALCULATOR_CLIENT_H
+#endif // MATHBOTCLI_H
