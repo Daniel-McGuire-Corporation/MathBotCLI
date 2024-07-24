@@ -1,5 +1,5 @@
-#ifndef CALCULATOR_CLIENT_H
-#define CALCULATOR_CLIENT_H
+#ifndef MathBot_CLIENT_H
+#define MathBot_CLIENT_H
 
 #ifdef _WIN32
     #define DLL_IMPORT __declspec(dllimport)
