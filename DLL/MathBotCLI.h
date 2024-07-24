@@ -13,10 +13,9 @@ Purpose: MathBotCLI Development Header
 #endif
 
 extern "C" {
-    DLL_IMPORT void displayUsage();
-    DLL_IMPORT void displayVersion();
-    DLL_IMPORT double calculate(double operand1, const char* op, double operand2);
-    DLL_IMPORT double calculate(const char* op, double operand);
+    DLL_IMPORT void MBver();
+    DLL_IMPORT double calc2(double operand1, const char* op, double operand2);
+    DLL_IMPORT double calc1(const char* op, double operand);
 }
 
 #endif // CALCULATOR_CLIENT_H
