@@ -79,10 +79,10 @@ double calculate(const std::string& op, double operand) {
 
 int main(int argc, char* argv[]) {
     std::string copyright = "(C) 2024 Daniel McGuire Corporation";
-    std::string app = "MathBotCLI";
-    std::string ver = " C++ Alpha";
+    std::string app = "MathBotCLI C++ Alpha";
+    std::string ver = "0.1.0.71.2030";
     std::cout << copyright << std::endl;
-    std::cout << app << ver << std::endl;
+    std::cout << app << std::endl;
     std::cout << std::endl;
     if (argc < 2) {
         displayUsage();

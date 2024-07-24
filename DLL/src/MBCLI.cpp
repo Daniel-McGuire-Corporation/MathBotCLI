@@ -9,8 +9,9 @@ Purpose: MathBotCLI C++ DLL
 #include <stdexcept>
 
 void MBver() {
-    std::string ver = "MathBotSO Alpha";
-    std::cout << ver << std::endl;
+    std::string name = "MathBotSO Alpha";
+    std::string ver = "0.1.0.71.2030";
+    std::cout << name << ver << std::endl;
 }
 
 double calc2(double operand1, const std::string& op, double operand2) {
