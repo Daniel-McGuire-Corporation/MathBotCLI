@@ -1,6 +1,6 @@
 [![License: GPL v3.](https://img.shields.io/github/license/DanielLMcGuire/MathBotCLI?style=flat-square)](https://www.gnu.org/licenses/old-licenses/gpl-3.0) ![Language: C#](https://img.shields.io/badge/language-C%23-green?style=flat-square)
 
-# Math Bot CLI - Command-Line Mathematical Utility
+# MathBotCLI
 
 Linux: Add apt repo ([instructions](https://github.com/Daniel-McGuire-Corporation/DMC-APT)) and run:
 ```bash
