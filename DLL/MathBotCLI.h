@@ -7,9 +7,9 @@ Purpose: MathBotCLI Development Header
 #define MathBot_CLIENT_H
 
 #ifdef _WIN32
-    #define DLL_IMPORT __declspec(dllimport)
+#define DLL_IMPORT __declspec(dllimport)
 #else
-    #define DLL_IMPORT
+#define DLL_IMPORT
 #endif
 
 extern "C" {
