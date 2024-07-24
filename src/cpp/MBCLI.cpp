@@ -12,12 +12,6 @@ Purpose: MathBotCLI C++ Port
 #include <iomanip>
 using namespace std;
 
-//declarations
-#include <iostream>
-#include <cmath>
-#include <string>
-#include <stdexcept>
-
 // Function declarations
 void displayUsage();
 double calculate(double operand1, const std::string& op, double operand2);
