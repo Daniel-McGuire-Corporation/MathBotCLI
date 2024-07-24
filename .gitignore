@@ -4,6 +4,9 @@
 *SHA256.txt
 *Setup.exe
 *.deb
+*.o
+*.dll
+*.exe
 
 ### Csharp ###
 ## Ignore Visual Studio temporary files, build results, and
