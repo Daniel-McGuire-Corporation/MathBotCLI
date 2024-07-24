@@ -1,7 +1,7 @@
 # Define variables
 CC = g++
 CFLAGS = -Wall -Wextra -O2 -m64
-LIBNAME = MathBotCLI
+LIBNAME = MathBotSO
 LIBFILE = lib$(LIBNAME).a
 DLLFILE = $(LIBNAME).dll
 HEADER = MathBotCLI.h
