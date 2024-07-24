@@ -1,21 +1,21 @@
-/*
-Author: Daniel McGuire
-
-Purpose: MathBotCLI Development Example
-*/
-
 #include <iostream>
 #include "MathBotCLI.h"
 
 int main() {
-    try {
-        double result1 = calculate(2, "+", 3);
-        std::cout << "2 + 3 = " << result1 << "\n";
+    // Print the version of the DLL
+    MBver();
 
-        double result2 = calculate("sqrt", 16);
-        std::cout << "sqrt 16 = " << result2 << "\n";
+    // Perform addition
+    double result = calc2(5.0, "+", 3.0);
+    std::cout << "Result of 5.0 + 3.0 = " << result << std::endl;
+
+    // Perform square root
+    try {
+        double sqrtResult = calc1("sqrt", 16.0);
+        std::cout << "Square root of 16.0 = " << sqrtResult << std::endl;
     } catch (const std::invalid_argument& e) {
-        std::cerr << "Error: " << e.what() << "\n";
+        std::cerr << e.what() << std::endl;
     }
+
     return 0;
 }

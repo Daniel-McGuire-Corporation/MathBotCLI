@@ -1,28 +1,24 @@
-# Compiler and flags
-CXX = g++
-CXXFLAGS = -std=c++17 -Wall -Wextra -O2
+# Define variables
+CC = g++
+CFLAGS = -Wall -Wextra -O2
+LIBNAME = MathBotCLI
+LIBFILE = lib$(LIBNAME).a
+DLLFILE = $(LIBNAME).dll
+HEADER = MathBotCLI.h
+DEMO_SOURCES = client.cpp
+DEMO_OBJECTS = $(DEMO_SOURCES:.cpp=.o)
 
-# Project name
-TARGET = test.exe
+# Default target
+all: demoApp
 
-# Source and object files
-SRCS = client.cpp
-OBJS = $(SRCS:.cpp=.o)
+# Rule to compile the demo application
+demoApp: $(DEMO_OBJECTS) $(LIBFILE)
+	$(CC) -o $@ $(DEMO_OBJECTS) -L. -l$(LIBNAME)
 
-# Build target
-all: $(TARGET)
-
-# Link the target
-$(TARGET): $(OBJS)
-	$(CXX) $(CXXFLAGS) -o $@ $^
-
-# Compile source files to object files
-%.o: %.cpp
-	$(CXX) $(CXXFLAGS) -c -o $@ $<
+# Rule to compile .cpp files into .o files
+%.o: %.cpp $(HEADER)
+	$(CC) $(CFLAGS) -c $< -o $@
 
 # Clean up build files
 clean:
-	rm -f $(TARGET) $(OBJS)
-
-# Phony targets
-.PHONY: all clean
+	rm -f $(DEMO_OBJECTS) demoApp

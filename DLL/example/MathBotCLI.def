@@ -1,0 +1,5 @@
+LIBRARY MathBotCLI
+EXPORTS
+    MBver
+    calc2
+    calc1

@@ -4,7 +4,7 @@ CXXFLAGS = -std=c++17 -Wall -Wextra -O2
 LDFLAGS = -shared
 
 # Project name
-TARGET = MathBot.dll
+TARGET = MathBotCLI.dll
 
 # Source and object files
 SRCS = MBCLI.cpp
