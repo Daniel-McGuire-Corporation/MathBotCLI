@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MathBotCLI", "src\cpp\MathBotCLI.vcxproj", "{0D31955B-3F72-48A4-B8FD-0937DB7902CA}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MathBotCLI - C++", "src\cpp\MathBotCLI.vcxproj", "{0D31955B-3F72-48A4-B8FD-0937DB7902CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

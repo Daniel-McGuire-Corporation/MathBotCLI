@@ -22,6 +22,7 @@
     <VCProjectVersion>17.0</VCProjectVersion>
     <ProjectGuid>{DA17F24D-BA25-469F-8068-D7B766CA6E8A}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
+    <ProjectName>MathBotCLI Shared Object</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
