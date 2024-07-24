@@ -1,9 +1,9 @@
-// MBCLI.cpp
 /*
-MathBotCLI WIP
-
 Author: Daniel McGuire
+
+Purpose: MathBotCLI C++ Port
 */
+
 #include <stdio.h>
 #include <iostream>
 #include <sstream>

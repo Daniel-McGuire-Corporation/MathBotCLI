@@ -1,3 +1,9 @@
+/*
+Author: Daniel McGuire
+
+Purpose: MathBotCLI Development Example
+*/
+
 #include <iostream>
 #include "MathBotCLI.h"
 

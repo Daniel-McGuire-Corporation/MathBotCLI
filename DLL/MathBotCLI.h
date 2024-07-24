@@ -1,3 +1,8 @@
+/*
+Author: Daniel McGuire
+
+Purpose: MathBotCLI Development Header
+*/
 #ifndef MathBot_CLIENT_H
 #define MathBot_CLIENT_H
 

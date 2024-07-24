@@ -3,6 +3,11 @@
 // Copyright 2021 - 2024 Daniel McGuire Corporation
 // All Rights Reserved.
 // Available under MIT License 
+/*
+Author: Daniel McGuire
+
+Purpose: MathBotCLI for GNU/Linux
+*/
 using System;
 using System.Diagnostics;
 

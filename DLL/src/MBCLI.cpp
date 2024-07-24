@@ -1,3 +1,8 @@
+/*
+Author: Daniel McGuire
+
+Purpose: MathBotCLI C++ DLL
+*/
 #include "MBCLI.h"
 #include <iostream>
 #include <cmath>
