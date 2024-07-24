@@ -15,7 +15,7 @@ Welcome to Math Bot CLI, a command-line utility that's more than just a mathemat
 This project originated from the need for a versatile mathematical tool that goes beyond simple arithmetic operations. The aim is to offer a comprehensive suite of mathematical functionalities within an intuitive command-line interface. However, the project's horizon extends beyond math; future iterations will incorporate additional capabilities and expand its utility.
 
 ## Current Features
-Math Bot CLI currently supports the following features and commands:
+Math Bot CLI currently supports the following features and commands: (Please use --help to see usage of C++ Version :)
 
 --about, -info, -a: Display detailed information about the application, including version details, copyright, and licensing.
 
