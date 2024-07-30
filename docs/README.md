@@ -2,10 +2,6 @@
 
 # MathBotCLI
 
-Linux: Add apt repo ([instructions](https://github.com/Daniel-McGuire-Corporation/DMC-APT)) and run:
-```bash
-sudo apt install mathbotcli
-```
 ## Overview
 Welcome to Math Bot CLI, a command-line utility that's more than just a mathematical tool. It's a dynamic and expandable application designed to facilitate various numerical computations and serve as a platform for future feature enhancements.
 
