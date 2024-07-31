@@ -1,3 +1,4 @@
+Development resuming in winter.
 [![License: GPL v3.](https://img.shields.io/github/license/DanielLMcGuire/MathBotCLI?style=flat-square)](https://www.gnu.org/licenses/old-licenses/gpl-3.0) ![Language: C#](https://img.shields.io/badge/language-C%23-green?style=flat-square)
 
 # MathBotCLI
