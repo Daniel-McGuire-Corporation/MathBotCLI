@@ -1,11 +1,11 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathBotCLI - win32", "src\Windows\MathBotCLI - win32.csproj", "{3B1ADF06-58D2-422D-BF55-2317CCB28150}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathBotCLI - win32", "..\src\windows\MathBotCLI - win32.csproj", "{3B1ADF06-58D2-422D-BF55-2317CCB28150}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Path Variable", "InsPathcomp\Path Variable.csproj", "{7FAA6495-170F-46E5-9B28-28D39BA7F7E3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Path Variable", "..\src\windows\InsPathcomp\Path Variable.csproj", "{7FAA6495-170F-46E5-9B28-28D39BA7F7E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
