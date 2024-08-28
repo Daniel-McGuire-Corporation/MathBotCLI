@@ -7,7 +7,7 @@ Development resuming in winter.
 ## Overview
 Welcome to Math Bot CLI, a command-line utility that's more than just a mathematical tool. It's a dynamic and expandable application designed to facilitate various numerical computations and serve as a platform for future feature enhancements.
 
-![Linux (WSL) Screenshot](https://raw.githubusercontent.com/Daniel-McGuire-Corporation/MathBotCLI/main/resources/MathBotCLI-linux.png)
+![](https://raw.githubusercontent.com/Daniel-McGuire-Corporation/MathBotCLI/main/resources/ssmb.png)
 
 ## Purpose and Scope
 This project originated from the need for a versatile mathematical tool that goes beyond simple arithmetic operations. The aim is to offer a comprehensive suite of mathematical functionalities within an intuitive command-line interface. However, the project's horizon extends beyond math; future iterations will incorporate additional capabilities and expand its utility.
