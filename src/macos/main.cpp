@@ -38,7 +38,7 @@ double calculate(const std::string& op, double operand) {
 int main(int argc, char* argv[]) {
     std::string copyright = "(C) 2024 Daniel McGuire Corporation";
     std::string app = "MathBotCLI macOS Alpha";
-    std::string ver = "EARLY ALPHA 0.1";
+    std::string ver = "Alpha 0.1";
     std::cout << copyright << std::endl;
     std::cout << app << std::endl;
     std::cout << std::endl;
