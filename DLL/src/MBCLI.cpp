@@ -10,6 +10,7 @@ void MBver() {
     std::cout << name << " " << ver << std::endl;
 }
 
+//TODO:  Make this better (maybe)
 double calc2(double operand1, const char* op, double operand2) {
     std::string op_str(op);
     if (op_str == "+") return operand1 + operand2;
