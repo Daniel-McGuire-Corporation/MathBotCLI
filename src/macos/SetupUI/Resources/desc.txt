@@ -1,0 +1,8 @@
+MathBotCLI is a cross-platform CLI Tool.
+
+
+Press ^⌘I to start the installation.
+
+
+
+More Coming Soon!

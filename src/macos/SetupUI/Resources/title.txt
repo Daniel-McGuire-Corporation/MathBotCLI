@@ -1,0 +1,1 @@
+MathBotCLI Installer for macOS 

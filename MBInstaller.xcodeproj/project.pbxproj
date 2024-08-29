@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AA447412C7FFB1B00A89EAB /* title.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1AA4473F2C7FFB1A00A89EAB /* title.txt */; };
+		1AA447422C7FFB1B00A89EAB /* desc.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1AA447402C7FFB1B00A89EAB /* desc.txt */; };
+		1AA447472C7FFE2500A89EAB /* install.pkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1AA447462C7FFE2500A89EAB /* install.pkg */; };
 		1AF15F292C7F54FA00B11C22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF15F232C7F54F900B11C22 /* ContentView.swift */; };
 		1AF15F2A2C7F54FA00B11C22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AF15F242C7F54F900B11C22 /* Assets.xcassets */; };
 		1AF15F2B2C7F54FA00B11C22 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF15F252C7F54F900B11C22 /* Main.swift */; };
@@ -14,8 +17,26 @@
 		1AF15F2D2C7F54FA00B11C22 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF15F272C7F54FA00B11C22 /* MenuBar.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1AA4473E2C7FF9BF00A89EAB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				1AA447472C7FFE2500A89EAB /* install.pkg in CopyFiles */,
+				1AA447412C7FFB1B00A89EAB /* title.txt in CopyFiles */,
+				1AA447422C7FFB1B00A89EAB /* desc.txt in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1A6C360F2C7F30D00077A199 /* Installer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Installer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AA4473F2C7FFB1A00A89EAB /* title.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = title.txt; path = src/macos/SetupUI/Resources/title.txt; sourceTree = "<group>"; };
+		1AA447402C7FFB1B00A89EAB /* desc.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = desc.txt; path = src/macos/SetupUI/Resources/desc.txt; sourceTree = "<group>"; };
+		1AA447462C7FFE2500A89EAB /* install.pkg */ = {isa = PBXFileReference; lastKnownFileType = file; name = install.pkg; path = scripts/pkg/install.pkg; sourceTree = "<group>"; };
 		1AF15F232C7F54F900B11C22 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = src/macos/SetupUI/ContentView.swift; sourceTree = "<group>"; };
 		1AF15F242C7F54F900B11C22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = src/macos/SetupUI/Assets.xcassets; sourceTree = "<group>"; };
 		1AF15F252C7F54F900B11C22 /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Main.swift; path = src/macos/SetupUI/Main.swift; sourceTree = "<group>"; };
@@ -38,6 +59,9 @@
 		1A6C36062C7F30D00077A199 = {
 			isa = PBXGroup;
 			children = (
+				1AA447462C7FFE2500A89EAB /* install.pkg */,
+				1AA447402C7FFB1B00A89EAB /* desc.txt */,
+				1AA4473F2C7FFB1A00A89EAB /* title.txt */,
 				1AF15F262C7F54F900B11C22 /* AppDelegate.swift */,
 				1AF15F242C7F54F900B11C22 /* Assets.xcassets */,
 				1AF15F232C7F54F900B11C22 /* ContentView.swift */,
@@ -66,6 +90,7 @@
 				1A6C360B2C7F30D00077A199 /* Sources */,
 				1A6C360C2C7F30D00077A199 /* Frameworks */,
 				1A6C360D2C7F30D00077A199 /* Resources */,
+				1AA4473E2C7FF9BF00A89EAB /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -192,7 +217,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -260,14 +285,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Installer/Installer.entitlements;
+				CODE_SIGN_ENTITLEMENTS = src/macos/SetupUI/Installer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Installer/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2024 Daniel McGuire Corporation";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -287,14 +312,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Installer/Installer.entitlements;
+				CODE_SIGN_ENTITLEMENTS = src/macos/SetupUI/Installer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Installer/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2024 Daniel McGuire Corporation";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
