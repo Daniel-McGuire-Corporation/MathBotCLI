@@ -874,3 +874,4 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/windows,macos,csharp,c++,objective-c,visualstudiocode,visualstudio,xcode,intellij
 scripts/pkg/install.pkg
 scripts/pkg/build_debug/MathBotCLI.pkg
+src/c++/MathBotCLI.ios
