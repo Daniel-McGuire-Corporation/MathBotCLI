@@ -96,3 +96,7 @@ func installPackage() {
         }
     }
 }
+
+#Preview {
+    ContentView()
+}
